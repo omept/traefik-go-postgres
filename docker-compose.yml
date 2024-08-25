@@ -40,6 +40,8 @@ services:
     networks:
       - frontend # Connect Go app to both frontend and backend networks
       - backend
+    deploy:
+      replicas: 10 # Scale Go app to 10 instances
 
   postgres:
     image: postgres:13
