@@ -44,7 +44,7 @@ services:
       replicas: 10 # Scale Go app to 10 instances
 
   postgres:
-    image: postgres:13
+    image: postgres:16
     environment:
       POSTGRES_USER: youruser
       POSTGRES_PASSWORD: yourpassword
